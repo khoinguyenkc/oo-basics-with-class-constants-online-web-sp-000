@@ -11,6 +11,7 @@ class Shoe
     @brand = brand
     if !BRANDS.include?(brand) #if array doens't include brand already
     BRANDS << @brand
+    end
   end
 
   def cobble
