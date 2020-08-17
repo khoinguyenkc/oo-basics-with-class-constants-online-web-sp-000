@@ -7,6 +7,8 @@ class Book
     @title = title
   end
 
+  puts @@duma
+
   def genre=(genre)
     @genre = genre
     GENRES << @genre
@@ -24,4 +26,3 @@ class Book
 end
 
 puts Book::GENRES
-puts Book::duma
