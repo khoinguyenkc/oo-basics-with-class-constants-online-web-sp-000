@@ -22,3 +22,5 @@ class Book
   end
 
 end
+
+puts Book::GENRES
