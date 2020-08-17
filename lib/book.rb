@@ -10,11 +10,13 @@ class Book
   def genre=(genre)
     @genre = genre
     GENRES << @genre
-    #at first, before genre is defined, this will be emtpy
-    #but i guess whne its defined, then this is updated...
-    #i'm not sure the logic behind. reference vs copy
+    #we're defining the genre= ourselves becaue we wanta customized version
+    #you CANNOT push the genre instance variable in the initialize method. why?
+    #becaus at that time, its value is not defined. you can't put a reference and expect it to update
+    #it doesnt happen!! i still am not sure the exact details of reference vs copy
+  end
 
-
+  
   def turn_page
     puts "Flipping the page...wow, you read fast!"
   end
