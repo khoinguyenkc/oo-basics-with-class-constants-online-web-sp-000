@@ -24,3 +24,4 @@ class Book
 end
 
 puts Book::GENRES
+puts Book::duma
