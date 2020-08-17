@@ -7,7 +7,7 @@ class Book
     @@duma = "linda"
   end
 
-
+  puts @@duma
   def genre=(genre)
     @genre = genre
     GENRES << @genre
