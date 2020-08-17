@@ -1,5 +1,5 @@
 class Book
-  attr_accessor :author, :page_count ::duma
+  attr_accessor :author, :page_count, ::duma
   attr_reader :title, :genre
   GENRES = []
   def initialize(title)
@@ -7,7 +7,8 @@ class Book
     @@duma = "linda"
   end
 
-  puts @@duma 
+  puts @@duma
+
   def genre=(genre)
     @genre = genre
     GENRES << @genre
