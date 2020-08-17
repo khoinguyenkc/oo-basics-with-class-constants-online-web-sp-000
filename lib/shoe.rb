@@ -6,14 +6,14 @@ class Shoe
 
   def initialize(brand)
     self.brand=(brand)
+    #apparently the user wants to pass brand at initilaization, not later
+    #you can put all the code in brand= i here, but its too long, thus we use a separate method
   end
 
   def brand=(brand)
     @brand = brand
     if !BRANDS.include?(brand) #if array doens't include brand already
-    binding.pry
     BRANDS << @brand
-    binding.pry
     end
   end
 
