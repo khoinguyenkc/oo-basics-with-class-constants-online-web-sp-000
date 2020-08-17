@@ -17,6 +17,11 @@ class Shoe
     end
   end
 
+  brands = ["Uggs", "Rainbow", "Nike", "Nike"]
+  brands.each do |brand|
+    Shoe.new(brand)
+  end
+
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
