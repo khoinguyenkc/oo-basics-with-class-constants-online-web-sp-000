@@ -9,9 +9,10 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
+    if !BRANDS.include?(brand) #if array doens't include brand already
     BRANDS << @brand
   end
-  
+
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
